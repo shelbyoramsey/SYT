@@ -1,2 +1,2 @@
-# SYT
-locks of hair
+# neSyt
+
