@@ -1,1 +1,1 @@
-this is a footer
+&copy; <?=date("Y")?> neSyt. All rights reserved.

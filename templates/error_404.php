@@ -5,6 +5,6 @@
 </section>
 <section class="info">
     <p>
-        Page not found :(
+        <?=$error?>
     </p>
 </section>
