@@ -1,0 +1,21 @@
+{
+    "name": "yakotta/nesyt",
+    "description": "neSyt by shelbyoramsey and yakotta",
+    "type": "project",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Jenna Pinkham",
+            "email": "pinkhamjenna@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/yakotta/php-library.git"
+        }
+    ],
+    "require": {
+        "yakotta/php-library": "dev-master"
+    }
+}
