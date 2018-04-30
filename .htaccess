@@ -1,0 +1,22 @@
+RewriteEngine on
+
+# forbid apache access from opening these files which begin with docker-....
+RewriteRule (^|/)\[Dd]ocker- - [F]
+
+# ----------------------------------------------------------------------
+#	without -MultiViews, Apache will give a 404 for a rewrite if a 
+#	folder of the same name does not exist 
+#	e.g. /blog/hello : webmasterworld.com/apache/3808792.htm
+# ---------------------------------------------------------------------- 
+Options +FollowSymlinks -MultiViews
+
+# -----------------------------------------------------------------------
+#	Don't attempt to manipulate images, javascripts or stylesheets
+# -----------------------------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} (gif|png|jpg|jpeg|ico|css|js|xml|pdf)$ [NC]
+RewriteRule ^(.*)$ - [L]
+
+# This is how we "route" the application
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !index.php$ [NC]
+RewriteRule ^(.*)$ index.php?url=/$1 [L,QSA]

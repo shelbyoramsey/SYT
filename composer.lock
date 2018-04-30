@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "9735550ce4b496cf3f202eb205ad92ad",
+    "packages": [
+        {
+            "name": "yakotta/php-library",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yakotta/php-library.git",
+                "reference": "836a633765bb8fd7207c0cef77939fea20e52d70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yakotta/php-library/zipball/836a633765bb8fd7207c0cef77939fea20e52d70",
+                "reference": "836a633765bb8fd7207c0cef77939fea20e52d70",
+                "shasum": ""
+            },
+            "type": "library",
+            "authors": [
+                {
+                    "name": "Jenna Pinkham",
+                    "email": "pinkhamjenna@gmail.com"
+                }
+            ],
+            "description": "yakotta library for php",
+            "support": {
+                "source": "https://github.com/yakotta/php-library/tree/master",
+                "issues": "https://github.com/yakotta/php-library/issues"
+            },
+            "time": "2018-04-24T20:59:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "yakotta/php-library": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
